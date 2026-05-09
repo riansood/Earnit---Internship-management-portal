@@ -4,12 +4,6 @@
 
 Welcome to Earn It, a startup from the University of Twente dedicated to helping university students find relevant part-time employment in The Netherlands. Our mission is to streamline the hiring process for companies and provide students with flexible, project-based employment opportunities aligned with their fields of study.
 
-cd existing_repo
-git remote add origin https://github.com/riansood/Earnit---Internship-management-portal.git
-git branch -M main
-git push -uf origin main
-
-
 ## Visuals
 
 Check the HelpPage for visual instructiosn on how to fill in the forms.
