@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Profile</title>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <img src="images/EarnitWhiteBackgroundGood.png" alt="logo" class="logo">
+        <ul class = "menu-links">
+            <span id="close-menu-btn" class="material-symbols-outlined"></span>
+            <li><a href="student_dashboard.html">My Dashboard</a></li>
+            <li><a href="profile.html">My profile</a></li>
+            <li><a href="notification.html">Notifications</a></li>
+            <li><a href="helpPage.html">Help</a></li>
+        </ul>
+        <span id="menu-btn" class="material-symbols-outlined"></span>
+    </nav>
+</header>
+    <div class="background-container">
+        <h1>Profile</h1>
+    </div>
+
+    <div class="container-1">
+        <div class="form">
+
+            <div class="input">
+                <div class="full-name">Full Name</div>
+                <div class="field">
+                    <input type="text" id="nameInput" class="hidden">
+                    <span id="name"></span>
+
+                </div>
+            </div>
+
+
+            <div class="input-list">
+                <div class="address">Address</div>
+                <div class="field-2">
+                    <input type="text" id="addressInput" class="hidden">
+                    <span id="address"></span>
+                </div>
+            </div>
+
+            <div class="input-1">
+                <div class="email">Email Address</div>
+                <div class="field-1">
+                    <span id="email"></span>
+                </div>
+            </div>
+            <div class="input-2">
+                <div class="phone-number-profile">Phone Number</div>
+                <div class="field-3">
+                    <input type="text" id="phoneNumberInput" class="hidden">
+                    <span id="phone-number-profile"></span>
+                </div>
+            </div>
+
+                <div class="field-4">
+                    <input type="checkbox" id="notification-checkbox">
+                    <label for="notification-checkbox">Disable Email Reminders (if you have already paid your taxes )</label>
+                </div>
+
+        <div class="button-container">
+            <button id="editProfile" onclick="editProfile()">Edit</button>
+            <button id="saveProfile" class="hidden" onclick="saveProfile()">Save</button>
+            <button id="deleteAccount" class="delete-Account">Delete Account</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="deleteModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Are you sure you want to delete your account?</h2>
+        <p>This action cannot be undone.</p>
+        <div class="modal-buttons">
+            <button id="confirmDelete" class="confirm-btn">Delete</button>
+            <button id="cancelDelete" class="cancel-btn">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script src = "js/profile.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the modal
+        const modal = document.getElementById('deleteModal');
+
+        // Get the button that opens the modal
+        const deleteButton = document.getElementById('deleteAccount');
+
+        // Get the <span> element that closes the modal
+        const closeButton = document.querySelector('.close-btn');
+
+        // Get the confirm and cancel buttons
+        const confirmButton = document.getElementById('confirmDelete');
+        const cancelButton = document.getElementById('cancelDelete');
+
+        // When the user clicks the delete account button, open the modal
+        deleteButton.addEventListener('click', function() {
+            modal.style.display = 'block';
+        });
+
+        // When the user clicks on <span> (x), close the modal
+        closeButton.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        // When the user clicks the confirm button, delete the account
+        confirmButton.addEventListener('click', function() {
+            alert('Your account has been deleted.'); // Replace this with actual deletion logic
+            modal.style.display = 'none';
+        });
+
+        // When the user clicks the cancel button, close the modal
+        cancelButton.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    });
+
+
+</script>
+</body>
+</html>

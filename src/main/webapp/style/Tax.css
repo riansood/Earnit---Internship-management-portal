@@ -1,0 +1,179 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', cursive;
+}
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: auto;
+    z-index: 1000;
+}
+.container {
+    max-width: 450px;
+    width: 100%;
+    background: #E5EAF5;
+    padding: 25px 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+    box-shadow: 10px 10px 20px #5a5555,
+    -10px 10px 20px #5a5555;
+}
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 20px;
+}
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: white;
+}
+.container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container form .tax-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0 12px 0;
+}
+form .tax-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 + 40px);
+    margin-right: 20px;
+}
+.tax-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-right: -60px;
+}
+.tax-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.tax-details .input-box input:focus,
+.tax-details .input-box input:valid {
+    border-color: gray;
+}
+.container form .button {
+    height: 45px;
+    margin-top: 10px;
+    width: 40%;
+}
+.container form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: black;
+    border-radius: 10px;
+}
+.container form .button input:hover{
+    background: black;
+}
+.container form .tax {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.container form .tax span:first-child {
+    margin-right: 50px;
+}
+
+.button{
+
+    background-color: #0B0B0B;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container form .tax #tax {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    margin-right: 0px;
+}
+
+.input-box {
+    position: relative;
+}
+.input-box .bx-euro {
+    position: absolute;
+    left: -20px;
+    top: 43%;
+    transform: translateY(-50%);
+}
+.input-box input {
+    padding-left: 30px;
+}
+.tax {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.tax .bx-euro {
+    margin-left: -45px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    .container .title {
+        font-size: 20px;
+    }
+    .tax-details .input-box {
+        width: 100%;
+        margin-right: 0;
+    }
+    .container form .button {
+        width: 100%;
+    }
+}

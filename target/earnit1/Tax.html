@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" dir="ltr">
+    <title> Taxes and Earnings </title>
+    <link rel="stylesheet" href="style/Tax.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.8">
+</head>
+
+<body>
+<header>
+    <nav class="navbar">
+        <img src="images/EarnitWhiteBackgroundGood.png" alt="logo" class="logo">
+        <!--<ul class = "menu-links">
+            <span id="close-menu-btn" class="material-symbols-outlined"></span>
+            <li><a href="student_dashboard.html">My Dashboard</a></li>
+            <li><a href="profile.html">My profile</a></li>
+            <li><a href="notification.html">Notifications</a></li>
+            <li><a href="helpPage.html">Help</a></li>
+        </ul>-->
+        <span id="menu-btn" class="material-symbols-outlined"></span>
+    </nav>
+</header>
+<div class="container">
+    <div class="title">Taxes and Earnings</div>
+    <form id = "tax_form" >
+        <div class="tax-details">
+            <div class="input-box">
+                <i class='bx bx-euro'></i>
+                <span class="details" name="earnings">Earnings (without VAT):</span>
+                <input type="text" id = "earning" placeholder="Enter earnings">
+                <span class="details" name="date"></span>
+                <input type="text" id = "date" placeholder="dd/mm/yyyy">
+            </div>
+        </div>
+
+        <button class="button" id="submit-tax"> Submit</button>
+        <div class="tax">
+            <span>Tax amount:</span>
+            <span id="tax" name="tax"></span>
+            <i class='bx bx-euro'></i>
+        </div>
+    </form>
+
+    <script src="js/TaxRequests.js"></script>
+
+</div>
+</body>
+</html>

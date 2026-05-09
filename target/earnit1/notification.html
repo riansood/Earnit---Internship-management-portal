@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <link rel="stylesheet" href="style/notification.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <img src="images/EarnitWhiteBackgroundGood.png" alt="logo" class="logo">
+        <ul class = "menu-links">
+            <span id="close-menu-btn" class="material-symbols-outlined"></span>
+            <li><a href="student_dashboard.html">My Dashboard</a></li>
+            <li><a href="profile.html">My profile</a></li>
+            <li><a href="notification.html">Notifications</a></li>
+            <li><a href="helpPage.html">Help</a></li>
+        </ul>
+        <span id="menu-btn" class="material-symbols-outlined"></span>
+    </nav>
+</header>
+<div class="container">
+    <div class="notificationContainer">
+        <header>
+            <div class="notificationHeader">
+                <h1>Notification</h1>
+                <span id="num-of-notif" class="notificationCount"></span>
+            </div>
+            <p id="mark-as-read">Mark as All Read</p>
+        </header>
+        <main id="notificationList">
+            <table id="commentTable">
+                <thead>
+
+                </thead>
+                <tbody>
+                <!-- Notifications will be appended here dynamically -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+</div>
+<script src="js/notification.js"></script>
+</body>
+</html>

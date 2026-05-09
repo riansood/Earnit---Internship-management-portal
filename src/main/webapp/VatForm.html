@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/VatForm1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <title> Vat Form</title>
+    <!-- Primary meta data -->
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <img src="images/EarnitWhiteBackgroundGood.png" alt="logo" class="logo">
+        <ul class = "menu-links">
+            <span id="close-menu-btn" class="material-symbols-outlined"></span>
+            <li><a href="student_dashboard.html">My Dashboard</a></li>
+            <li><a href="profile.html">My profile</a></li>
+            <li><a href="notification.html">Notifications</a></li>
+            <li><a href="helpPage.html">Help</a></li>
+        </ul>
+        <span id="menu-btn" class="material-symbols-outlined"></span>
+    </nav>
+</header>
+
+<div class="background-container">
+    <h1>Vat form</h1>
+</div>
+<form id="vat-form">
+    <div class="form-container">
+        <div class="form-section card-3d">
+
+            <div class="form-section card-3d">
+                <h2>Company Details</h2>
+
+                <div class="form-section">
+                    <label for="trade-name">1a. Trade Name. </label>
+                    <p> Mention the name under which your company is known. </p>
+                    <input type="text" id="trade-name" name="trade-name" required>
+                </div>
+
+                <div class="form-section">
+                    <label for="business-address-streetName">1b. Business Address</label><br>
+                    <input type="text" id="business-address-StreetName" name="business-address-StreetName" placeholder="Street name" required><br>
+                    <input type="number" id="house-number" name="house-number" placeholder="House number" required>
+                    <input type="text" id="addition" name="addition" placeholder="addition" required>
+                    <input type="text" id="postal-code" name="postal-code" placeholder="Postal code" required><br>
+                    <input type="text" id="city" name="city" placeholder="City" required><br>
+                </div>
+
+                <div class="form-section ">
+                    <label for="start-date">1c. Start Date of the Company</label>
+                    <input type="date" id="start-date" name="start-date" required>
+                </div>
+
+                <div class="form-section">
+                    <label for="company-phone">1d. Company Phone Number</label>
+                    <input type="tel" id="company-phone" name="company-phone" pattern="[0-9]*" required>
+                </div>
+
+                <div class="form-section ">
+                    <label for="company-website">1e.Company Website (optional)</label>
+                    <input type="text" id="company-website" name="company-website">
+                </div>
+
+
+
+
+                <div class="form-section card-3d">
+                    <h2> Details of the entrepreneur (sole proprietorship) </h2>
+
+                    <div class="form-section">
+                        <p> Provide your own details here</p>
+                        <label for="entrepreneur's-name">2a. Name</label>
+                        <input type="text" id="entrepreneur's-name" name="entrepreneur's-name" required>
+                    </div>
+
+
+
+                    <div class="form-section">
+                        <label for="residential-address">2b. Residential Address</label><br>
+                        <input type="text" id="residential-address" name="business-address" placeholder="Street name" required><br>
+                        <input type="number" id="house-number-entrepreneur" name="house-number-entrepreneur" placeholder="House number" required>
+                        <input type="text" id="addition-residential-address" name="addition-residential-address" placeholder="addition" required>
+                        <input type="text" id="postal-code-residential-address" name="postal-code-residential-address" placeholder="Postal code" required><br>
+                        <input type="text" id="city-residential-address" name="city-residential-address" placeholder="City" required><br>
+                    </div>
+
+
+                    <div class="form-section">
+                        <label for="phone-number-of-entrepreneur">2c. Phone Number</label>
+                        <input type="tel" id="phone-number-of-entrepreneur" name="phone-number-of-entrepreneur" required>
+                    </div>
+
+                    <div class="form-section">
+                        <label for="date-of-birth">2d. Date of birth</label>
+                        <input type="date" id="date-of-birth" name="date-of-birth" required>
+                    </div>
+
+                    <div class="form-section">
+                        <label for="BSN">2e. Citizen service number (BSN)</label>
+                        <input type="number" id="BSN" name="BSN" required>
+                    </div>
+                </div>
+
+                <div class="form-section card-3d">
+                    <h2> Nature of the business</h2>
+                    <p> What are the activities?</p>
+                    <label for="nature-of-business">3. Describe the activities of the company as fully as possible. Also, mention which goods and services the company provides.</label>
+                    <input type="text" id="nature-of-business" name="nature-of-business" required>
+                </div>
+            </div>
+
+            <div class="form-section card-3d">
+                <h2> Information for VAT (Sales Tax)</h2>
+                <p>If you sell products or provide services, the company generates revenue. You will likely need to pay VAT on this.</p>
+                <label for="estimated-revenue">4a. Estimated revenue in the starting year.</label>
+                <input type="text" id="estimated-revenue" name="estimated-revenue" required>
+                <label for="estimated-costs">4b. Estimated costs, purchases, and investments in the first year.</label>
+                <input type="text" id="estimated-costs" name="estimated-costs" required>
+                <label for="people-to-work-for">4c. How many people do you expect to work for?</label>
+                <input type="text" id="people-to-work-for" name="people-to-work-for" required>
+                <label for="address-for-VAT">4d. What is the correspondence address for VAT purposes?</label>
+                <input type="checkbox" id="address-for-VAT" name="address-for-VAT" value="Business address (same as question 1b)">
+                <label for="address-for-VAT">Business address (same as question 1b)</label>
+                <div class="form-section">
+                    <input type="checkbox" id="another-address-checkbox" name="another-address-checkbox">
+                    <label class="checkbox-label" for="another-address-checkbox">Another address</label>
+                    <div id="alternate-address-fields" style="display: none;">
+                        <input type="text" id="alternate-street-name" name="alternate-street-name" placeholder="Street name">
+                        <input type="number" id="alternate-house-number" name="alternate-house-number" placeholder="House number">
+                        <input type="text" id="alternate-addition" name="alternate-addition" placeholder="Addition">
+                        <input type="text" id="alternate-postal-code" name="alternate-postal-code" placeholder="Postal code">
+                        <input type="text" id="alternate-city" name="alternate-city" placeholder="City">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-section card-3d">
+                <h2> Signature </h2>
+                <p>In a partnership, one person can sign on behalf of the company.</p>
+                <label for="initial(s)-name">5a. Initial(s) and Name</label>
+                <input type="text" id="initial(s)-name" name="initial(s)-name" required>
+                <input type="text" id="signature-street-name" name="business-address" placeholder="Street name" required><br>
+                <input type="number" id="signature-house-number" name="signature-house-number" placeholder="House number" required>
+                <input type="text" id="signature-addition" name="signature-addition" placeholder="addition" required>
+                <input type="text" id="signature-postal-code" name="signature-postal-code" placeholder="Postal code" required><br>
+                <input type="text" id="signature-city" name="signature-city" placeholder="City" required><br>
+
+                <div class="form-section">
+                    <label for="phone-number-signature-field"> 5b. Phone Number</label>
+                    <input type="tel" id="phone-number-signature-field" name="phone-number-signature-field" pattern="[0-9]*" required>
+                </div>
+                <div class="form-section ">
+                    <label for="date-signature-field">5c. Date</label>
+                    <input type="date" id="date-signature-field" name="date-signature-field" required>
+                </div>
+                <div class="form-section">
+                    <label for="signature-photo">5d. Signature</label>
+                    <input type="file" class="form-control-file" id="signature-photo">
+                </div>
+
+
+
+                <div class="btn-box">
+                    <button type="submit">Submit</button>
+                </div>
+                <div class="messageVAT" id="messageVat">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/StudentRequests.js"> </script>
+    <script src="js/VATformRequests.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#another-address-checkbox').change(function() {
+                if ($(this).is(':checked')) {
+                    $('#alternate-address-fields').slideDown();
+                } else {
+                    $('#alternate-address-fields').slideUp();
+                }
+            });
+        });
+    </script>
+</form>
+</body>
+
+</html>

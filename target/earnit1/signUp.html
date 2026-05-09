@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/signUp.css">
+    <!--
+        -primary meta tags
+     -->
+
+    <title>Sign Up-In</title>
+</head>
+<body>
+    <!-- Content goes here -->
+
+    <!--
+
+    <h1 class="page-title">Earn It</h1>
+    Thinking of deleting this, since it looks rather random on top of the container
+    -->
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id = "signup-form">
+                <h1>  Create Account</h1>
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="text" id="address" placeholder="Address" required>
+                    <input type="tel" id="phone" placeholder="Phone Number"  required pattern="[0-9]*">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <input type="password" id="password" placeholder="Password" required minlength="6">
+<!--                    <input type="password" id="password-verification" name="password-verification" placeholder="Password Verification" required minlength="6">-->
+                    <button type="submit"> Submit </button><br>
+                    <a id = "message"> </a>
+                </div>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+        <form id = "login-form">
+            <h1> Sign In</h1>
+            <div class="form-group">
+                <input type="text" id="usernameSignIn" placeholder="Email Address" required>
+                <input type="password" id="passwordSignIn" placeholder="Password" required minlength="6">
+                <a href="#"> Forgot Password? </a>
+                <button type = "submit"> Sign In </button><br>
+                <a id = "message2"> </a>
+            </div>
+        </form>
+    </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1> Welcome! </h1>
+                    <p> Enter your personal details to sign in! </p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1> Not a member yet? Register now! </h1>
+                    <p> Fill in the details to create an account and use the website </p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/StudentRequests.js"></script>
+
+</body>
+</html>

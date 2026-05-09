@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/single_application.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Profile</title>
+</head>
+<body>
+<div class="profile">
+    <a href="dashboard_emp.html">
+        <img src="images/EarnitWhiteBackgroundGood.png" alt="logo" class="logo">
+    </a>
+
+
+    <div class="container-1">
+        <div class="input-container">
+            <input type="text" id = "insert-comment" placeholder="Enter your comment here">
+            <button class=" submit-button" id = "comment">Submit</button>
+        </div>
+        <div class="form">
+            <div class="frame-2610465">
+                <span class="student-details">Student Details</span>
+            </div>
+        </div>
+        <div class="input">
+            <div class="username">Name</div>
+            <div class="field">
+                <span id = "name"></span>
+            </div>
+        </div>
+        <div class="input-1">
+            <div class="email">Email</div>
+            <div class="field-1">
+                <span id = "email"></span>
+            </div>
+        </div>
+        <div class="input-list">
+            <div class="BTW">BTW number</div>
+            <div class="field-2">
+                <span id = "btw"></span>
+            </div>
+        </div>
+        <div class="input-2">
+            <div class="tax">TAX</div>
+            <div class="field-3">
+                <span id = "tax"></span>
+            </div>
+        </div>
+        <button class="pdf" id="pdf" > Download PDF </button>
+        <button class="approved" id="approved">Approve</button>
+    </div>
+</div>
+<script src = "js/EmployeeRequests.js"></script>
+<script src = "js/single_application.js"></script>
+
+<script>
+    document.getElementById('pdf').addEventListener('click', function() {
+        const pdfButton = this;
+
+        // Change the button text to "Downloading..." and disable it
+        pdfButton.textContent = 'Downloading...';
+        pdfButton.disabled = true;
+
+        // Simulate the download process with a timeout (e.g., 3 seconds)
+        setTimeout(function() {
+            // Simulate download complete
+            pdfButton.textContent = 'Download PDF';
+            pdfButton.disabled = false;
+        }, 3000);
+
+
+    });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/single_application.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Profile</title>
+</head>
+<body>
+<div class="profile">
+    <img src="images/EarnitWhiteBackgroundGood.png" alt="logo" class="logo">
+    <div class="container-1">
+        <div class="input-container">
+            <input type="text" id = "insert-comment" placeholder="Enter your text here">
+            <button id = "comment">Submit</button>
+        </div>
+        <div class="form">
+            <div class="profile-1">
+                <div class="avatar">
+                    <div class="rectangle-1"></div>
+                </div>
+                <div class="frame-2610465">
+                    <span class="anna-smith">Student</span>
+                </div>
+            </div>
+            <div class="input">
+                <div class="username">Name</div>
+                <div class="field">
+                    <span id = "name"></span>
+                </div>
+            </div>
+            <div class="input-1">
+                <div class="email">Email</div>
+                <div class="field-1">
+                    <span id = "email"></span>
+                </div>
+            </div>
+            <div class="input-list">
+                <div class="BTW">BTW number</div>
+                <div class="field-2">
+                    <span id = "btw"></span>
+                </div>
+            </div>
+            <div class="input-2">
+                <div class="tax">TAX</div>
+                <div class="field-3">
+                    <span id = "tax"></span>
+                </div>
+            </div>
+            <button class="pdf" id="pdf">Download PDF</button>
+            <button class="approved" id="approved">Approve</button>
+        </div>
+    </div>
+</div>
+<script src = "js/EmployeeRequests.js"></script>
+<script src = "js/single_application.js"></script>
+</body>
+</html>-->

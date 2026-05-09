@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    x
+    <servlet>
+        <servlet-name>EarnitApp</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>Routes</param-value> <!-- Replace with your package name -->
+        </init-param>
+        <init-param>
+            <param-name>jersey.config.server.wadl.disableWadl</param-name>
+            <param-value>false</param-value> <!-- Ensure WADL is enabled -->
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EarnitApp</servlet-name>
+        <url-pattern>/api/*</url-pattern> <!-- Adjust as per your application requirements -->
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>signUp.html</welcome-file>
+    </welcome-file-list>
+</web-app>

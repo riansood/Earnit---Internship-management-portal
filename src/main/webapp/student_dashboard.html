@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/student_dash.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Earn It</title>
+</head>
+<body>
+<!-- SIDEBAR -->
+<section id="sidebar">
+    <img src="images/EarnitWhiteBackgroundGood.png" alt="logo" class="logo">
+    <a href="#" class="name">Earn It</a>
+    <ul class="side-menu">
+        <li><a href="#" class="active"><i class='bx bxs-dashboard icon'></i> Dashboard</a></li>
+        <li class="divider">Main</li>
+        <li>
+            <a href="#"><i class='bx bx-detail icon'></i> Documents <i class='bx bx-chevron-right icon-right'></i></a>
+            <ul class="side-dropdown">
+                <li><a href="VatForm.html">VAT form</a></li>
+                <li><a onclick = "checkBTW()">Tax</a></li>
+                <li><button id="PDF" type="submit">Download Vat form PDF</button></li>
+                <a id="pdfMessage"></a>
+            </ul>
+        </li>
+        <li><a href="notification.html"><i class='bx bx-bell icon'></i> Notifications</a></li>
+        <li><a href="helpPage.html"><i class='bx bx-help-circle icon'></i> Help</a></li>
+    </ul>
+    <button class='bx bx-log-out-circle icon' id="log-out-button-dashboard"> Log out</button>
+</section>
+<!-- SIDEBAR -->
+
+<!-- NAVBAR -->
+<section id="content">
+    <nav>
+        <span class="divider"></span>
+        <div class="profile">
+            <div class="welcome-text"> Welcome to the dashboard overview! </div>
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGVvcGxlfGVufDB8fDB8fHww" alt="">
+            <ul class="profile-link">
+                <li><a href="profile.html"><i class='bx bxs-user-circle icon'></i> Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+</section>
+<!-- NAVBAR -->
+
+<!-- MAIN -->
+<section id="main">
+    <div class="cards">
+        <div class="card">
+            <div class="card-content">
+                <div class="btw-text">Self-employment number</div>
+                <div class="btw" id="btwContainer">
+                    <span id="btwDisplay"></span>
+                    <input type="text" id="btwInput" class="hidden"  maxlength="14">
+                    <button id="btwEditBtn" onclick="editBTW()">Edit</button>
+                    <button id="btwSaveBtn" class="hidden" onclick="saveBTW()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="charts">
+        <div class="chart" id="chart">
+            <h2>Earnings</h2>
+            <canvas id="myChart" width="-200" height="50"></canvas>
+        </div>
+    </div>
+</section>
+<!-- MAIN -->
+
+<!-- TABLE -->
+
+<script src="js/script_dash_student.js"></script>
+<script src="js/StudentRequests.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+<script src="js/chart.js"></script>
+</body>
+</html>
