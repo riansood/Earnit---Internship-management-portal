@@ -38,14 +38,6 @@ Centralized income reporting and quarterly tax calculation.
 Email reminders for tax deadlines.
 Integration with a Mail Server for automated reminders.
 
-## Support
-
-For any questions or support during your engagement with Earn It, feel free to reach out:
-
-Faisal Nizamudeen - Chief Technical Officer (CTO)
-
-Email: m.f.nizamudeen@earnit.works
-Daan Schram - Software Developer
 
 
 
@@ -126,4 +118,4 @@ Ioana-Natasa Tudorache
 
 ## Project status
 
-We did not have time to implement the email server and some extra functionalities regarding the profile (edit the profile picture, deleting the profile).
+We did not have time to implement the security on the email server and therefore used a dummy email to send emails and some extra functionalities regarding the profile (edit the profile picture, deleting the profile).
