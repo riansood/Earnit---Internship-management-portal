@@ -1,22 +1,5 @@
-
-
-## EARNIT1
-
-Welcome to Earn It, a startup from the University of Twente dedicated to helping university students find relevant part-time employment in The Netherlands. Our mission is to streamline the hiring process for companies and provide students with flexible, project-based employment opportunities aligned with their fields of study.
-
-## Visuals
-
-Check the HelpPage for visual instructiosn on how to fill in the forms.
-
-Installation:
-Follow these steps to set up and run Earn It on your local machine:
-
-Requirements
-Before proceeding, ensure you have the following installed:
-
-Java Development Kit (JDK) version 8 or higher
-Apache Maven
-PostgreSQL Database
+## Project Goal
+Building a portal for EarnIt where students could create an account, file their earnings, calculate taxes to pay and streamline their process of receiving a BTW number - Work permit number to receive work permits as well as apply for internshios on this website. The portal also support employees logging in to their dashboard to view  students to approve their files before filing for an official work permit and automate PDF generation of official documents to be sent to the KVK.
 
 
 ## Usage
